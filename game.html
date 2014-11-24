@@ -3,39 +3,47 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Jonathan Lucka</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/bootstrap.js"></script>
+    <script src="js/animations.js"></script>
 	</head>
 	<body>
         <div class = "container">
         	<div id = "topbar">
 				<div class="page-header">
-					<h1 id = "logo"><big>Jonathan Lucka</big></h1>
-				  	<ul class="nav nav-pills" role="tablist">
-	  					<li role="presentation"><a href="index.html">about</a></li>
-	  					<li role="presentation" class="active"><a href="portfolio.html">portfolio</a></li>
-	  					<li role="presentation"><a href="resume.html">résumé</a></li>
-						<li role="presentation"><a href="contact.html">contact</a></li>
-					</ul>
+          <div id = "logo">
+            <a href = "index.html"><img src="img/logo1.png"></img></a>
+            <a href = "https://www.linkedin.com/pub/jonathan-lucka/49/b0/201" class = "socialIcon"><img src = "img/Linkedin.png"></img></a>
+            <a href = "MAILTO:jozzle06@yahoo.com" class = "socialIcon"><img src = "img/mail.png"></img></a>
+            <a href = "https://github.com/jlucka625" class = "socialIcon"><img src = "img/github.png"></img></a>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+              GAMES
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="game.html">GAMES</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="processing.html">PROCESSING</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="modeling.html">MODELING</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="cg.html">COMP GRAPHICS</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="drawing.html">DRAWINGS</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="sculpture.html">SCULPTURES</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="das.html">INTRO TO DAS</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="gd.html">GRAPHIC DESIGN</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="ixd.html">INTERACTION DESIGN</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="resume.html">RÉSUMÉ</a></li>
+            </ul>
+          </div>
 				</div>
         	</div>
-        	<div>
-          <ul class="nav nav-pills nav-stacked" role="tablist">
-                <li role="presentation" class = "active"><a href="game.html">games</a></li>
-                <li role="presentation"><a href="processing.html">processing</a></li>
-                <li role="presentation"><a href="modeling.html">modeling</a></li>
-                <li role="presentation"><a href="das.html">intro to das</a></li>
-                <li role="presentation"><a href="cg.html">comp graphics</a></li>
-            <li role="presentation"><a href="drawing.html">drawings</a></li>
-            <li role="presentation"><a href="sculpture.html">sculptures</a></li>
-            <li role="presentation"><a href="gd.html">graphic design</a></li>
-          <li role="presentation"><a href="ixd.html">interaction design</a></li>
-        </ul>
-        	</div>
         	<div class = "galleryContainer">
-        		<h2>papercuts</h2>
+        		<h2>PAPERCUTS</h2>
             <a href = "docs/Papercuts.html">&gt&gt Click here to play &lt&lt</a><br></br>
             <div class = "well">
                 <p>Papercuts was created for the class CAP 3020 "Theory and Practice of Multimedia Production". It was a group project
@@ -79,7 +87,7 @@
               </div>
             </div>
           </div>
-        		<h2>super slime blob</h2>
+        		<h2>SUPER SLIME BLOB</h2>
             <a href = "docs/Papercuts.html">&gt&gt Click here to download (pc only) &lt&lt</a><br></br>
             <div class = "well">
                 <p>Super Slime Blob started off as a group project in high school. Originally, it was just a short demo
@@ -109,7 +117,7 @@
             </div>
 				</div>
 
-				<h2>muncher</h2>
+				<h2>MUNCHER</h2>
         <p>coming to google play store soon</p>
             <div class = "well">
                 <p>I started working on Muncher so that I could teach myself how to make games for mobile devices. Muncher
@@ -131,5 +139,10 @@
         <br></br>
         	</div>
         </div>
+      <script>
+        $( document ).ready(function() {
+          $('.galleryContainer').addClass('animated fadeIn');
+        });
+      </script>
 	</body>
 </html>

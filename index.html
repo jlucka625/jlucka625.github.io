@@ -3,7 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Jonathan Lucka</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/bootstrap.js"></script>
@@ -12,26 +15,44 @@
         <div class = "container">
         	<div id = "topbar">
 				<div class="page-header">
-					<h1 id = "logo"><big>Jonathan Lucka</big></h1>
-				  	<ul class="nav nav-pills" role="tablist">
-	  					<li role="presentation" class="active"><a href="index.html">about</a></li>
-	  					<li role="presentation"><a href="portfolio.html">portfolio</a></li>
-	  					<li role="presentation"><a href="resume.html">résumé</a></li>
-						<li role="presentation"><a href="contact.html">contact</a></li>
-					</ul>
+					<div id = "logo">
+						<a href = "index.html"><img src="img/logo1.png"></img></a>
+						<a href = "https://www.linkedin.com/pub/jonathan-lucka/49/b0/201" class = "socialIcon"><img src = "img/Linkedin.png"></img></a>
+						<a href = "MAILTO:jozzle06@yahoo.com" class = "socialIcon"><img src = "img/mail.png"></img></a>
+						<a href = "https://github.com/jlucka625" class = "socialIcon"><img src = "img/github.png"></img></a>
+					</div>
+					<div class="dropdown">
+					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+					    PORTFOLIO
+					    <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="game.html">GAMES</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="processing.html">PROCESSING</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="modeling.html">MODELING</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="cg.html">COMP GRAPHICS</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="drawing.html">DRAWINGS</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="sculpture.html">SCULPTURES</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="das.html">INTRO TO DAS</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="gd.html">GRAPHIC DESIGN</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="ixd.html">INTERACTION DESIGN</a></li>
+					    <li role="presentation"><a role="menuitem" tabindex="-1" href="resume.html">RÉSUMÉ</a></li>
+					  </ul>
+					</div>
 				</div>
         	</div>
-			<div class = "contentContainer">
+			<div class = "contentContainer animated fadeIn">
 				<div class="image-wrapper">
-					<img src="img/avatar2.png" class="scale-image"></img>
+					<img src="img/avatar2.png"></img>
 				</div>
 				<br>
-				<div class = "well">I am a fifth-year Digital Arts and Sciences Major at the University of Florida. The DAS program
+				<div class = "well"><p>I am a fifth-year Digital Arts and Sciences Major at the University of Florida. The DAS program
 				mixes the traditional computer science cirriculum with fine arts, human centered computing, and game design. Since my passion
 				is game design, I felt that this program was the most fit for me. You will find on this site that I have more than just my work 
 				in video games. I have decided to include artistic works or programs from some of my courses not related to game design. This 
-				will more accurately show my development during my time at UF.</div>
+				will more accurately show my development during my time at UF.</p></div>
 			</div>
         </div>
+        <br></br>
 	</body>
 </html>
