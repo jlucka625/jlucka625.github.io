@@ -207,6 +207,12 @@
 		padding-top: 108px;
 	}
 
+	.resumeContainer{
+		width: 718px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
 	.contentContainer{
 		padding-top: 144px;
 		text-align: justify;
